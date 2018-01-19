@@ -30,7 +30,11 @@ body{
    grid-template-areas:
    ". t t t t t t t t ."
    ". et et et . . bdt bdt bdt ."
-   ". wt . mt . . . . . . ";
+   ". wt . mt . . . . . . "
+   "houseT houseIPW . houseIPM . . .  . . ."
+   "foodT foodIPW . foodIPM . . . .  . ."
+   "carT carIPW . carIPM . . . . .  ."
+   "loansT loansIPW . loansIPM . .  . . . .";
 }
 /* TITLES */
 .title{
@@ -49,4 +53,63 @@ body{
 }
 .monthlyTitle{
   grid-area: mt;
+}
+
+/* BUDGET ROWS */
+/* T suffix = Title */
+/* IP suffix = InPut */
+/* W suffix = Weekly */
+/* M suffix = Monthly */
+.housingT{
+  grid-area: houseT;
+}.housingIPW{
+  grid-area: houseIPW;
+}.housingIPM{
+  grid-area: houseIPM;
+}
+
+.foodT{
+  grid-area: foodT;
+}.foodIPW{
+  grid-area: foodIPW;
+}.foodIPM{
+  grid-area: foodIPM;
+}
+
+.carT{
+  grid-area: carT;
+}.carIPW{
+  grid-area: carIPW;
+}.carIPM{
+  grid-area: carIPM;
+}
+
+.loansT{
+  grid-area: loansT;
+}.loansIPW{
+  grid-area: loansIPW;
+}.loansIPM{
+  grid-area: loansIPM;
+}
+
+.IP{
+  margin-top: 11px;
+}
+
+input{
+  width: 70px;
+  height: 22px;
+  font-size: 16px;
+}
+
+
+
+
+/* A solution to remove the annoying arrows on the side of an input type=number that I found on stackoverflow. https://stackoverflow.com/questions/13107118/how-to-remove-the-arrows-from-inputtype-number-in-opera*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
 }
