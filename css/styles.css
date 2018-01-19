@@ -1,0 +1,52 @@
+body{
+  background-color: #d3d3d3;
+}
+#content {
+   /* display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-gap: 10px;
+   grid-auto-rows: minmax(500px, auto);
+   position: relative;
+   grid-template-areas:
+   ". . . . cb cb cb cb . . . ."; */
+
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-auto-rows: minmax(20px, auto);
+   grid-gap: 10px;
+   margin: 0 auto;
+   position: relative;
+   grid-template-areas:
+   ". cb cb cb .";
+}
+.calcBody{
+   grid-area: cb;
+   background-color: #fff;
+   text-align: center;
+   display: grid;
+   grid-template-columns: repeat(10, 1fr);
+   grid-auto-rows: minmax(20px, auto);
+   grid-gap: 10px;
+   grid-template-areas:
+   ". t t t t t t t t ."
+   ". et et et . . bdt bdt bdt ."
+   ". wt . mt . . . . . . ";
+}
+/* TITLES */
+.title{
+  grid-area: t;
+}
+.expensesTitle{
+  grid-area: et;
+  font-size: 20px;
+}
+.breakdownTitle{
+  grid-area: bdt;
+  font-size: 20px;
+}
+.weeklyTitle{
+  grid-area: wt;
+}
+.monthlyTitle{
+  grid-area: mt;
+}
