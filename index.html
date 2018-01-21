@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app = 'budgetCalc'>
   <head>
     <meta charset="utf-8">
     <title>ayy lmao</title>
@@ -8,9 +8,9 @@
   <body>
     <div id="content">
       <div class="calcBody">
-        <div class="title">
+        <div class="title" ng-controller='linkTest'>
           <h1>Budget Calculator</h1>
-          <h4>Brushing up on my JavaScript.</h4>
+          <h4>{{$scope.test}}</h4>
         </div>
         <div class="expensesTitle">
           <p>Expenses</p>
@@ -18,56 +18,48 @@
         <div class="breakdownTitle">
           <p>Budget Breakdown</p>
         </div>
-        <div class="weeklyTitle">
-          <p>Weekly</p>
-        </div>
-        <div class="monthlyTitle">
-          <p>Monthly</p>
+        <div class="inputType">
+          <p>will your input be in weeks or months?</p>
+          <select class="" name="WorM">
+            <option value="weekly">Weeks</option>
+            <option value="monthly">Months</option>
+          </select>
         </div>
 
         <div class="housingT">
           <p>Housing</p>
         </div>
-        <div class="housingIPW IP">
-          <input type="number" name="" value="$0.00">
-        </div>
-        <div class="housingIPM IP">
-          <input type="number" name="" value="$0.00">
+        <div class="housingIP IP">
+          <input type="number" name="" value="" placeholder="$0.00" ng-model= "housingIP">
         </div>
 
         <div class="foodT">
           <p>Food</p>
         </div>
-        <div class="foodIPW IP">
-          <input type="number" name="" value="$0.00">
-        </div>
-        <div class="foodIPM IP">
-          <input type="number" name="" value="$0.00">
+        <div class="foodIP IP">
+          <input type="number" name="" value="" placeholder="$0.00" ng-model="foodIP">
         </div>
 
         <div class="carT">
           <p>Car</p>
         </div>
-        <div class="carIPW IP">
-          <input type="number" name="" value="$0.00">
-        </div>
-        <div class="carIPM IP">
-          <input type="number" name="" value="$0.00">
+        <div class="carIP IP">
+          <input type="number" name="" value="" placeholder="$0.00" ng-model="carIP">
         </div>
 
         <div class="loansT">
           <p>Loans</p>
         </div>
-        <div class="loansIPW IP">
-          <input type="number" name="" value="$0.00">
+        <div class="loansIP IP">
+          <input type="number" name="" value="" placeholder="$0.00" ng-model="loansIP">
         </div>
-        <div class="loansIPM IP">
-          <input type="number" name="" value="$0.00">
-        </div>
-
       </div>
     </div>
-    <script type="text/javascript" src="./scripts/script.js" /></script>
+    <script type="text/javascript" src="./scripts/script.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script type="text/javascript" src=".\scripts\homepage-controller.js"></script>
+    <script type="text/javascript" src=".\scripts\module.js"></script>
+
+
   </body>
 </html>

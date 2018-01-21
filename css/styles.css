@@ -30,11 +30,11 @@ body{
    grid-template-areas:
    ". t t t t t t t t ."
    ". et et et . . bdt bdt bdt ."
-   ". wt . mt . . . . . . "
-   "houseT houseIPW . houseIPM . . .  . . ."
-   "foodT foodIPW . foodIPM . . . .  . ."
-   "carT carIPW . carIPM . . . . .  ."
-   "loansT loansIPW . loansIPM . .  . . . .";
+   " it it it it it . . . . . "
+   ". houseT houseIP houseIP .  . .  . . ."
+   ". foodT foodIP foodIP . . . .  . ."
+   ". carT carIP carIP . .  . . .  ."
+   ". loansT loansIP loansIP  . .  . . . .";
 }
 /* TITLES */
 .title{
@@ -54,6 +54,9 @@ body{
 .monthlyTitle{
   grid-area: mt;
 }
+.inputType{
+  grid-area: it;
+}
 
 /* BUDGET ROWS */
 /* T suffix = Title */
@@ -62,34 +65,26 @@ body{
 /* M suffix = Monthly */
 .housingT{
   grid-area: houseT;
-}.housingIPW{
-  grid-area: houseIPW;
-}.housingIPM{
-  grid-area: houseIPM;
+}.housingIP{
+  grid-area: houseIP;
 }
 
 .foodT{
   grid-area: foodT;
-}.foodIPW{
-  grid-area: foodIPW;
-}.foodIPM{
-  grid-area: foodIPM;
+}.foodIP{
+  grid-area: foodIP;
 }
 
 .carT{
   grid-area: carT;
-}.carIPW{
-  grid-area: carIPW;
-}.carIPM{
-  grid-area: carIPM;
+}.carIP{
+  grid-area: carIP;
 }
 
 .loansT{
   grid-area: loansT;
-}.loansIPW{
-  grid-area: loansIPW;
-}.loansIPM{
-  grid-area: loansIPM;
+}.loansIP{
+  grid-area: loansIP;
 }
 
 .IP{
@@ -100,6 +95,7 @@ input{
   width: 70px;
   height: 22px;
   font-size: 16px;
+  text-align: center;
 }
 
 
