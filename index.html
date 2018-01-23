@@ -10,21 +10,22 @@
       <div class="calcBody">
         <div class="title" ng-controller='link'>
           <h1>Budget Calculator</h1>
-          <h4>{{test}}</h4>
+          <label for="income">Your monthly income: </label>
+          <input type="number" name="income" id="income" placeholder="$0.00">
         </div>
         <div class="expensesTitle">
-          <p>Expenses</p>
+          <p>Monthly expenses</p>
         </div>
         <div class="breakdownTitle">
           <p>Budget Breakdown</p>
         </div>
-        <div class="inputType">
+        <!-- <div class="inputType">
           <p>will your input be in weeks or months?</p>
-          <select class="" name="WorM">
-            <option value="weekly">Weeks</option>
-            <option value="monthly">Months</option>
-          </select>
-        </div>
+          <input type="radio" name="WorM" value="weekly" id="weekly">
+          <label for="weekly">Weeks</label>
+          <input type="radio" name="WorM" value="monthly" id="monthly">
+          <label for="monthly">Months</label>
+        </div> -->
 
         <div class="housingT">
           <p>Housing</p>
@@ -59,7 +60,7 @@
     <script type="text/javascript" src="./scripts/script.js"></script>
     <script type="text/javascript" src=".\scripts\module.js"></script>
     <script type="text/javascript" src=".\scripts\homepage-controller.js"></script>
-
+    <script type="text/javascript" src=".\scripts\service.js"></script>
 
   </body>
 </html>

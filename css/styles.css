@@ -30,7 +30,6 @@ body{
    grid-template-areas:
    ". t t t t t t t t ."
    ". et et et . . bdt bdt bdt ."
-   " it it it it it . . . . . "
    ". houseT houseIP houseIP .  . .  . . ."
    ". foodT foodIP foodIP . . . .  . ."
    ". carT carIP carIP . .  . . .  ."
